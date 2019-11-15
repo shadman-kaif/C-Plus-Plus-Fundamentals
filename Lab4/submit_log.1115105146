@@ -1,0 +1,60 @@
+Submitting assignment 4 from p72.ecf.utoronto.ca
+Checking for the expected files in the current directory
+AsteroidList.cpp MyAIData.hpp AsteroidsObserver.cpp GameAI.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+mkdir -p src/galaxy-explorer
+cp exercise.make src/Makefile
+cp *.hpp src/galaxy-explorer
+cp *.cpp src/galaxy-explorer
+make -C src BUILD_MODE=release
+make[1]: Entering directory `/tmp/4_lh4TWD1c/src'
+Building with makeflags  --no-print-directory -rl 8 -- WRAPPER_UOFTECE2442018F=done BUILD_MODE=release
+In build mode release
+g++ -c  '/tmp/4_lh4TWD1c/src/galaxy-explorer/AsteroidList.cpp' -o  ../build/OBJ/release/galaxy-explorer/AsteroidList.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+g++ -c  '/tmp/4_lh4TWD1c/src/galaxy-explorer/AsteroidsObserver.cpp' -o  ../build/OBJ/release/galaxy-explorer/AsteroidsObserver.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/galaxy-explorer/galaxy_explorer.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_drawing.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_master.o
+g++ -c  '/tmp/4_lh4TWD1c/src/galaxy-explorer/GameAI.cpp' -o  ../build/OBJ/release/galaxy-explorer/GameAI.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/galaxy-explorer/galaxy_explorer_main.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_main.o
+'g++' ../build/OBJ/release/galaxy-explorer/AsteroidList.o ../build/OBJ/release/galaxy-explorer/AsteroidsObserver.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/release/galaxy-explorer/GameAI.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_main.o -o '../build/EXE/release/galaxy-explorer' -L/share/copy/ece244f/SFML-2.4.2/lib -L/lib64 -lsfml-audio-s -lsfml-network-s -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -l:libudev.so.0 -lXrandr -lpthread -lrt -lGL -lSM -lICE -lX11 -lXext -lfreetype -ljpeg -l:libFLAC.so.8 -lvorbis -lvorbisenc -logg -lvorbisfile -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/common/exercise_main.o ../build/OBJ/release/common/exercise_main.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/galaxy-explorer/testing/asteroid_list_test_public.o ../build/OBJ/release/galaxy-explorer/testing/asteroid_list_test_public.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/galaxy-explorer/testing/galaxy_explorer_test_public.o ../build/OBJ/release/galaxy-explorer/testing/galaxy_explorer_test_public.o
+'g++' ../build/OBJ/release/common/exercise_main.o ../build/OBJ/release/galaxy-explorer/testing/asteroid_list_test_public.o ../build/OBJ/release/galaxy-explorer/testing/galaxy_explorer_test_public.o ../build/OBJ/release/galaxy-explorer/AsteroidList.o ../build/OBJ/release/galaxy-explorer/AsteroidsObserver.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/release/galaxy-explorer/GameAI.o -o '../build/EXE/release/galaxy-explorer_tests_read_from_stdin' -L/share/copy/ece244f/SFML-2.4.2/lib -L/lib64 -lsfml-audio-s -lsfml-network-s -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -l:libudev.so.0 -lXrandr -lpthread -lrt -lGL -lSM -lICE -lX11 -lXext -lfreetype -ljpeg -l:libFLAC.so.8 -lvorbis -lvorbisenc -logg -lvorbisfile -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+cp /share/copy/ece244f/lab4/src/../build/OBJ/release/common/testing_default_main.o ../build/OBJ/release/common/testing_default_main.o
+'g++' ../build/OBJ/release/common/testing_default_main.o ../build/OBJ/release/galaxy-explorer/testing/asteroid_list_test_public.o ../build/OBJ/release/galaxy-explorer/testing/galaxy_explorer_test_public.o ../build/OBJ/release/galaxy-explorer/AsteroidList.o ../build/OBJ/release/galaxy-explorer/AsteroidsObserver.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/release/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/release/galaxy-explorer/GameAI.o -o '../build/EXE/release/test_galaxy-explorer' -L/share/copy/ece244f/SFML-2.4.2/lib -L/lib64 -lsfml-audio-s -lsfml-network-s -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -l:libudev.so.0 -lXrandr -lpthread -lrt -lGL -lSM -lICE -lX11 -lXext -lfreetype -ljpeg -l:libFLAC.so.8 -lvorbis -lvorbisenc -logg -lvorbisfile -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+make[1]: Leaving directory `/tmp/4_lh4TWD1c/src'
+cp build/EXE/galaxy-explorer_tests_read_from_stdin .
+------------------------------------------------------------------
+The build appears to have been successful
+
+Running exercise on the produced executable 'galaxy-explorer_tests_read_from_stdin'
+############### Testcase 1 Results ##########################
+Functionality: PASS - Output matches solution
+############### Testcase 2 Results ##########################
+Functionality: PASS - Output matches solution
+############### Testcase 3 Results ##########################
+Functionality: PASS - Output matches solution
+################# Summary for 3 test(s) #####################
+Functionality: PASS: All tests passed
+
+The required files passed exercise
+
+Submitting files
+
+Verifying submission
+submitece244f -l 4
+total 40
+-rw-r----- 1 submit ece244f  3325 Nov 15 10:51 AsteroidList.cpp
+-rw-r----- 1 submit ece244f  1085 Nov 15 10:51 AsteroidsObserver.cpp
+-rw-r----- 1 submit ece244f 10923 Nov 15 10:51 GameAI.cpp
+-rw-r----- 1 submit ece244f  1272 Nov 15 10:51 MyAIData.hpp
+-rw-r----- 1 submit ece244f  6396 Nov 15 02:13 submit_log.1115021336
+-rw-r----- 1 submit ece244f  6465 Nov 15 02:18 submit_log.1115021825
+
+All filesizes match. All timestamps match submission time.
+
+Submission was successful
+
